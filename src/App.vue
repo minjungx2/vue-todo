@@ -14,6 +14,7 @@ import TodoList from './components/TodoList.vue'
 import TodoFooter from './components/TodoFooter.vue'
 
 export default {
+  name: 'App',
   components: {
     'TodoHeader': TodoHeader,
     'TodoInput': TodoInput,
