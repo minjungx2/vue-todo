@@ -1,5 +1,5 @@
-# _**vue-todo**_
-**Vue.js로 만드는 TodoList**
+# _**vue project**_
+**Vue.js로 만드는 기록도구**
 
 
 
@@ -16,4 +16,9 @@ npm run serve
 #### Compiles and minifies for production
 ```
 npm run build
+```
+
+#### router install
+```
+npm install vue-router@next
 ```
