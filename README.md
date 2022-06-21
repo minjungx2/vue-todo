@@ -22,3 +22,8 @@ npm run build
 ```
 npm install vue-router@next
 ```
+
+#### Element ui install
+```
+npm install element-plus --save
+```
