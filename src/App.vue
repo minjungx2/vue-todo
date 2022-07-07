@@ -3,23 +3,14 @@
         <el-container>
             <el-header class="layout-header">
                 <el-menu
-                  :default-active="activeIndex"
-                  class="el-menu-demo"
                   mode="horizontal"
-                  :ellipsis="false"
+                  router="true"
+                  style="width:100%"
                 >
-                  <el-menu-item index="0">로고</el-menu-item>
-                  <div class="flex-grow"/>
-                  <el-menu-item index="1">My</el-menu-item>
-                  <el-sub-menu index="2">
-                    <template>Workspace</template>
-                    <el-menu-item index="2-1">내 정보</el-menu-item>
-                    <el-sub-menu index="2-2">
-                        <template>item four</template>
-                        <el-menu-item index="2-2-1">item one</el-menu-item>
-                        <el-menu-item index="2-2-2">item two</el-menu-item>
-                        <el-menu-item index="2-2-3">item three</el-menu-item>
-                    </el-sub-menu>
+                  <el-menu-item index="0">Tools</el-menu-item>
+                  <el-sub-menu index="1">
+                    <template #title>My</template>
+                    <el-menu-item index="2-1" route="/myInfo">내 정보</el-menu-item>
                 </el-sub-menu>
                 </el-menu>
             </el-header>
@@ -29,15 +20,15 @@
                         <el-menu mode="vertical" router="true">
                             <el-menu-item index="1" route="/todo">
                                 <el-icon><icon-menu/></el-icon>
-                                <span>투두리스트</span>
+                                <span>Todo</span>
                             </el-menu-item>
                             <el-menu-item index="2" route="/calendar">
                                 <el-icon><icon-menu/></el-icon>
-                                <span>일정관리</span>
+                                <span>Calendar</span>
                             </el-menu-item>
                             <el-menu-item index="3">
                                 <el-icon><icon-menu/></el-icon>
-                                <span>가계부</span>
+                                <span>Memo</span>
                             </el-menu-item>
                         </el-menu>
                     </el-scrollbar>
@@ -80,10 +71,5 @@
 </script>
 
 <style scoped="scoped">
-    .layout-header {
-        background-color: darkgrey;
-    }
-    .layout-aside {
-        background-color: blanchedalmond;
-    }
+
 </style>

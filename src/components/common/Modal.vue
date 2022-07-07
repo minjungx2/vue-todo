@@ -24,10 +24,11 @@
 
 <script>
 export default {
-    props: {
-        show: Boolean,
-        alertMsg: String
-    }
+  name: 'Modal',
+  props: {
+      show: Boolean,
+      alertMsg: String
+  }
 }
 </script>
 
