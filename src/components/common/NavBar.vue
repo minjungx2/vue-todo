@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">Navbar</a>
@@ -40,14 +40,7 @@
 </template>
 
 <script>
-
 export default {
-    name: "App",
-    components: {
-
-    }
+	name: nav-bar
 }
 </script>
-<style scoped="scoped">
-
-</style>

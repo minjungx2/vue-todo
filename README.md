@@ -23,8 +23,7 @@ npm run build
 npm install vue-router@next
 ```
 
-#### Element ui install
+#### Bootstrap install
 ```
-npm install element-plus --save
-npm install @element-plus/icons-vue
+npm install --save bootstrap
 ```
