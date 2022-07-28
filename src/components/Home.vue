@@ -1,13 +1,19 @@
 <template>
 	<div class="common-layout">
-		home
-		<router-link to="/todo">Todo</router-link>
+		<nav-bar></nav-bar>
+		<main-section></main-section>
 	</div>
-	<router-view></router-view>
 </template>
 
 <script>
+import NavBar from './NavBar.vue'
+import MainSection from './MainSection.vue'
+
 export default {
-	name: 'Home'
+	name: 'Home',
+	components: {
+		NavBar,
+		MainSection
+	}
 }
 </script>

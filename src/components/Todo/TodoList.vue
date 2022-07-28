@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 ul {
 	list-style-type: none;
 	padding-left: 0px;
